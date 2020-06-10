@@ -1,3 +1,13 @@
+## Doc Slug
+
+This is a small slug to help create documentation using docstrings.
+This project shows a preference for Markdown.
+Using:
+- python poetry
+- sphinx
+
+
+## Commands
 ```bash
 # Create project (This creates a whole folder)
 poetry new kd_slug
@@ -33,6 +43,7 @@ sphinx-quickstart
 poetry install
 ```
 
+## Last tips
 This way you can create a markdown file with `.. automodule::` to automatically grab your docstrings to document your code. Then add the `.readthedocs.yml` and add the build to your Read The Docs account.
 
 Once everything is set and done, just update your docstrings whenever you change your code, and your documentation will reflect the changes.
