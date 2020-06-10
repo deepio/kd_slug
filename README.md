@@ -30,7 +30,7 @@ sphinx-quickstart
   # Project release []: 0.0.1
   # Project language [en]: en
 
-# Edit docs/conf.py to add mr2 and docstring extensions
+# Edit docs/conf.py to add m2r and docstring extensions
 # extensions = ['m2r', 'sphinx.ext.autodoc']
 # autosectionlabel_prefix_document = True
 # source_suffix = ['.rst', '.md']
