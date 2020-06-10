@@ -131,6 +131,10 @@ version = "0.2.1"
 docutils = "*"
 mistune = "*"
 
+[package.source]
+reference = "ee7c81842e62034ffb55ae07798b0a2dc108ad29"
+type = "git"
+url = "https://github.com/crossnox/m2r"
 [[package]]
 category = "main"
 description = "Safely add untrusted strings to HTML/XML markup."
@@ -413,7 +417,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "44ca8ea99544accc024c7c7948772d01325c29b0ee586c80f21fdd7426f015e3"
+content-hash = "0590ba292ca79efe48df2374889b2efebc82ca11551c2d4e862a789724c7e35c"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -465,9 +469,7 @@ jinja2 = [
     {file = "Jinja2-2.11.2-py2.py3-none-any.whl", hash = "sha256:f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"},
     {file = "Jinja2-2.11.2.tar.gz", hash = "sha256:89aab215427ef59c34ad58735269eb58b1a5808103067f7bb9d5836c651b3bb0"},
 ]
-m2r = [
-    {file = "m2r-0.2.1.tar.gz", hash = "sha256:bf90bad66cda1164b17e5ba4a037806d2443f2a4d5ddc9f6a5554a0322aaed99"},
-]
+m2r = []
 markupsafe = [
     {file = "MarkupSafe-1.1.1-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:09027a7803a62ca78792ad89403b1b7a73a01c8cb65909cd876f7fcebd79b161"},
     {file = "MarkupSafe-1.1.1-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:e249096428b3ae81b08327a63a485ad0878de3fb939049038579ac0ef61e17e7"},

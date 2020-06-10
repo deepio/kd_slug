@@ -1,17 +1,34 @@
 ```bash
-# Create project
+# Create project (This creates a whole folder)
 poetry new kd_slug
+# Or you could just create the toml file instead with `poetry init`
+
 cd kd_slug
 python3 -m venv env && . env/bin/activate
 
 # Add dependencies
-poetry add sphinx m2r
+poetry add sphinx
+poetry add git+https://github.com/crossnox/m2r@dev
 
 # Create Sphinx project
+mkdir docs/
+cd docs/
 sphinx-quickstart
-Separate source and build directories (y/n) [n]: yes
-Project name: kd_slug
-Author name(s): deepio
-Project release []: 0.0.1
-Project language [en]: en
+  # Separate source and build directories (y/n) [n]: no
+  # Project name: kd_slug
+  # Author name(s): deepio
+  # Project release []: 0.0.1
+  # Project language [en]: en
+
+# Edit docs/conf.py to add mr2 and docstring extensions
+# extensions = ['m2r', 'sphinx.ext.autodoc']
+# autosectionlabel_prefix_document = True
+# source_suffix = ['.rst', '.md']
+
+# Change index.rst to index.md and now you have a super markdown file.
+
+# Add `.. mdinclude:: ../README.md` to the top of index.md
+
+# Install your new custom library so it's accessible in python (e.g., from kd_slug import app)
+poetry install
 ```
