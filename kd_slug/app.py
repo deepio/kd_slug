@@ -12,14 +12,14 @@ class MegaClass:
   This is the class text
   """
 
-  def __init__(self, input_):
+  def __init__(self, input_: str):
     """
     :param [input_]: A character string that represents the filepath and filename of the file to open.
     :type [input_]: String
     """
     self.input_ = input_
   
-  def imul(self):
+  def imul(self) -> int:
     """
     This is the method text
 

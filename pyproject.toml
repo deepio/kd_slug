@@ -6,10 +6,10 @@ authors = ["deepio"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-sphinx = "^3.1.0"
-m2r = {git = "https://github.com/crossnox/m2r", rev = "dev"}
 
 [tool.poetry.dev-dependencies]
+sphinx = "^3.1.0"
+m2r = {git = "https://github.com/crossnox/m2r", rev = "dev"}
 pytest = "^5.2"
 
 [build-system]
